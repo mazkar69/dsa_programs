@@ -23,7 +23,7 @@ public class Masking {
 //===========================================================
 
         //Clear a range of bit
-        int n = 15;    //1111
+        int n = 15;    // 1111
         int i = 2;   //Means last 2 bit clear
         //Clear last 2 bit and make it 1100 that is 12;
 

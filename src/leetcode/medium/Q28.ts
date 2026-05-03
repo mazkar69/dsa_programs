@@ -1,3 +1,5 @@
+export {};
+
 function strStr(haystack: string, needle: string): number {
   const haystackLen: number = haystack.length;
   const needleLen: number = needle.length;

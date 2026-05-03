@@ -1,3 +1,4 @@
+export {};
 // function rotatedDigits(n: number): number {
 //   let count: number = 0;
 
@@ -26,7 +27,6 @@
 
 //   return count;
 // }
-
 //USING RECURSION || YET TO SOLVE USING ITERATION
 function rotatedDigits(n: number): number {
   let count: number = 0;

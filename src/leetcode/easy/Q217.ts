@@ -5,6 +5,5 @@ function containsDuplicate(nums: number[]): boolean {
         if (set.has(num)) return true;
         set.add(num);
     }
-
     return false;
 }

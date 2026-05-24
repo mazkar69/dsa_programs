@@ -34,6 +34,8 @@ class Tree<T> {
             this.queue.dequeue();
         }
 
+        
+
         this.queue.enqueue(newNode);
     }
 
@@ -63,7 +65,29 @@ class Tree<T> {
         this.postOrderTraversal(node.right);
         console.log(node.value);
     }
+    
+    levelOrderTraversal(node:Node<T>|null = this.root){
+        if(node === null){
+            return;
+        }
+        const queue = new Queue<Node<T>>();
+        queue.enqueue(node);
 
+        while(!queue.isEmpty()){
+            const node:Node<T> = queue.dequeue();
+
+            console.log(node.value);
+            
+            if(node.left){
+                queue.enqueue(node.left);
+            }
+            if(node.right){
+                queue.enqueue(node.right)
+            }
+        }
+
+
+    }
 }
 
 
@@ -82,3 +106,6 @@ tree.inOrderTraversal();
 
 console.log("Post-order Traversal:");
 tree.postOrderTraversal();
+
+console.log("Level-order Traversal:");
+tree.levelOrderTraversal();

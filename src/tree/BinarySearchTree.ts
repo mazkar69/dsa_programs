@@ -100,8 +100,6 @@ class BinarySearchTree<T> {
         if (!node) {
             return;
         }
-
-
         print(node.value, "");
         this.preOrder(node.left);
         this.preOrder(node.right);
@@ -136,3 +134,10 @@ bst.rInsertNode(6);
 bst.rInsertNode(8);
 console.log("Pre-order Traversal:");
 bst.preOrder();
+console.log("\nIn-order Traversal:");
+bst.inOrder();
+console.log("\nPost-order Traversal:");
+bst.postOrder();
+bst.deleteNode(3);
+console.log("\nIn-order Traversal after deleting 3:");
+bst.inOrder();
